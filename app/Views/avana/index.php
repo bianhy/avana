@@ -57,7 +57,7 @@
         <figcaption>
           <h2>Eliana Dedda<span> Identity</span></h2>
           <p>Personal Brand Identity.</p>
-          <a href="works-details.php">View more</a> </figcaption>
+          <a href="article?id=10001">View more</a> </figcaption>
       </figure>
     </section>
     <div class="clearfix"></div>

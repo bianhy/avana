@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Model\ArticleModel;
 use Avana\System\Controller;
 use Avana\System\Libraries\Input;
 use Avana\System\Libraries\Openssl;
@@ -59,6 +60,11 @@ class AbstractController extends Controller
      */
     protected $AccountsModel;
 
+    /**
+     * @var ArticleModel
+     */
+    protected $ArticleModel;
+
 
     public function __construct()
     {
@@ -84,6 +90,10 @@ class AbstractController extends Controller
 
         $this->setProperty('AccountsModel', function () {
             return new AccountsModel();
+        });
+
+        $this->setProperty('ArticleModel', function () {
+            return new ArticleModel();
         });
     }
 

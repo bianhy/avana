@@ -14,101 +14,45 @@
 
         <meta name="author" content="">
 
-        
-
         <title>:: avana LLC ::</title>
-
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
-
+        <link rel="shortcut icon" href="<?=AVANA_STATIC;?>images/favicon.ico" type="image/x-icon">
 
         <!-- style -->
 
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="<?=AVANA_STATIC;?>css/style.css" rel="stylesheet" type="text/css">
 
         <!-- style -->
 
         <!-- bootstrap -->
 
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="<?=AVANA_STATIC;?>css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
         <!-- responsive -->
 
-        <link href="css/responsive.css" rel="stylesheet" type="text/css">
+        <link href="<?=AVANA_STATIC;?>css/responsive.css" rel="stylesheet" type="text/css">
 
         <!-- font-awesome -->
 
-        <link href="css/fonts.css" rel="stylesheet" type="text/css">
-
-        <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+        <link href="<?= AVANA_STATIC; ?>css/font-awesome.4.6.0.css" rel="stylesheet" type="text/css">
 
         <!-- font-awesome -->
 
-        <link href="css/effects/set2.css" rel="stylesheet" type="text/css">
-
-        <link href="css/effects/normalize.css" rel="stylesheet" type="text/css">
-
-        <link href="css/effects/component.css"  rel="stylesheet" type="text/css" >
+        <link href="<?=AVANA_STATIC;?>css/effects/set2.css" rel="stylesheet" type="text/css">
+        <link href="<?=AVANA_STATIC;?>css/effects/normalize.css" rel="stylesheet" type="text/css">
+        <link href="<?=AVANA_STATIC;?>css/effects/component.css"  rel="stylesheet" type="text/css" >
 
 	</head>
-
-
-
     <body>
 
     
 
     	<!-- header -->
-
-        	<header role="header">
-
-            	<div class="container">
-
-                	<!-- logo -->
-
-                    	<h1>
-
-                        	<a href="index.php" title="avana LLC"><img src="images/logo.png" title="avana LLC" alt="avana LLC"/></a>
-
-                        </h1>
-
-                    <!-- logo -->
-
-                    <!-- nav -->
-
-                    <nav role="header-nav" class="navy">
-
-                        <ul>
-
-                            <li class="nav-active"><a href="index.php" title="Work">Work</a></li>
-
-                            <li><a href="about.php" title="About">About</a></li>
-
-                            <li><a href="blog.php" title="Blog">Blog</a></li>
-
-                            <li><a href="contact.php" title="Contact">Contact</a></li>
-
-                        </ul>
-
-                    </nav>
-
-                    <!-- nav -->
-
-                </div>
-
-            </header>
-
+        <?php require_once dirname(__FILE__) . '/public/header.php'; ?>
         <!-- header -->
 
         <!-- main -->
 
         <main role="main-inner-wrapper" class="container">
-
-        	
-
-            
-
-            	
 
                 <!-- work details -->
 
@@ -160,11 +104,11 @@
 
                             <ul class="grid-lod effect-2" id="grid">
 
-                                <li><img src="images/work/works-image-1.jpg" alt="" class="img-responsive"/></li>
+                                <li><img src="<?=AVANA_STATIC;?>images/work/works-image-1.jpg" alt="" class="img-responsive"/></li>
 
-                                <li><img src="images/work/works-image-2.jpg" alt="" class="img-responsive"/></li>
+                                <li><img src="<?=AVANA_STATIC;?>images/work/works-image-2.jpg" alt="" class="img-responsive"/></li>
 
-                                <li><img src="images/work/works-image-3.jpg" alt="" class="img-responsive"/></li>
+                                <li><img src="<?=AVANA_STATIC;?>images/work/works-image-3.jpg" alt="" class="img-responsive"/></li>
 
                             </ul>
 
@@ -176,63 +120,13 @@
 
                 <!-- work details -->
 
-            
-
-            
-
         </main>
 
     	<!-- main -->
 
         <!-- footer -->
 
-        <footer role="footer">
-
-            <!-- logo -->
-
-                <h1>
-
-                    <a href="index.php" title="avana LLC"><img src="images/logo.png" title="avana LLC" alt="avana LLC"/></a>
-
-                </h1>
-
-            <!-- logo -->
-
-            <!-- nav -->
-
-            <nav role="footer-nav">
-
-            	<ul>
-
-                	<li><a href="index.php" title="Work">Work</a></li>
-
-                    <li><a href="about.php" title="About">About</a></li>
-
-                    <li><a href="blog.php" title="Blog">Blog</a></li>
-
-                    <li><a href="contact.php" title="Contact">Contact</a></li>
-
-                </ul>
-
-            </nav>
-
-            <!-- nav -->
-
-            <ul role="social-icons">
-
-            	<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-
-                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-
-                <li><a href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
-
-            </ul>
-
-            <p class="copy-right">&copy; 2015  avana LLC.. All rights Resved</p>
-
-        </footer>
+        <?php require_once dirname(__FILE__) . '/public/footer.php' ?>
 
         <!-- footer -->
 
@@ -240,31 +134,31 @@
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="<?=AVANA_STATIC;?>js/jquery.min.js" type="text/javascript"></script>
 
         <!-- custom -->
 
-		<script src="js/nav.js" type="text/javascript"></script>
+		<script src="<?=AVANA_STATIC;?>js/nav.js" type="text/javascript"></script>
 
-        <script src="js/custom.js" type="text/javascript"></script>
+        <script src="<?=AVANA_STATIC;?>js/custom.js" type="text/javascript"></script>
 
         <!-- Include all compiled plugins (below), or include individual files as needed -->
 
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="<?=AVANA_STATIC;?>js/bootstrap.min.js" type="text/javascript"></script>
 
-        <script src="js/effects/masonry.pkgd.min.js"  type="text/javascript"></script>
+        <script src="<?=AVANA_STATIC;?>js/effects/masonry.pkgd.min.js"  type="text/javascript"></script>
 
-		<script src="js/effects/imagesloaded.js"  type="text/javascript"></script>
+		<script src="<?=AVANA_STATIC;?>js/effects/imagesloaded.js"  type="text/javascript"></script>
 
-		<script src="js/effects/classie.js"  type="text/javascript"></script>
+		<script src="<?=AVANA_STATIC;?>js/effects/classie.js"  type="text/javascript"></script>
 
-		<script src="js/effects/AnimOnScroll.js"  type="text/javascript"></script>
+		<script src="<?=AVANA_STATIC;?>js/effects/AnimOnScroll.js"  type="text/javascript"></script>
 
-        <script src="js/effects/modernizr.custom.js"></script>
+        <script src="<?=AVANA_STATIC;?>js/effects/modernizr.custom.js"></script>
 
         <!-- jquery.countdown -->
 
-        <script src="js/html5shiv.js" type="text/javascript"></script>
+        <script src="<?=AVANA_STATIC;?>js/html5shiv.js" type="text/javascript"></script>
 
     </body>
 

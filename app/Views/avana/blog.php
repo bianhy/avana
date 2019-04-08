@@ -78,7 +78,7 @@
 
                         <section class="blog-content">
 
-                            <a href="blog-details.php">
+                            <a href="blog/1001">
 
                             <figure>
 
@@ -108,7 +108,7 @@
 
                         <section class="blog-content">
 
-                            <a href="blog-details.php">
+                            <a href="blog/1002">
 
                             <figure>
 
@@ -138,7 +138,7 @@
 
                         <section class="blog-content">
 
-                            <a href="blog-details.php">
+                            <a href="blog/1002">
 
                             <figure>
 
@@ -168,7 +168,7 @@
 
                         <section class="blog-content">
 
-                            <a href="blog-details.php">
+                            <a href="blog/1002">
 
                             <figure>
 
@@ -198,7 +198,7 @@
 
                         <section class="blog-content">
 
-                            <a href="blog-details.php">
+                            <a href="blog/1002">
 
                             <figure>
 
@@ -238,7 +238,7 @@
 
                         <section class="blog-content">
 
-                            <a href="blog-details.php">
+                            <a href="blog/1002">
 
                             <figure>
 
@@ -268,7 +268,7 @@
 
                         <section class="blog-content">
 
-                            <a href="blog-details.php">
+                            <a href="blog/1002">
 
                             <figure>
 
@@ -298,7 +298,7 @@
 
                         <section class="blog-content">
 
-                            <a href="blog-details.php">
+                            <a href="blog/1002">
 
                             <figure>
 
@@ -328,7 +328,7 @@
 
                         <section class="blog-content">
 
-                            <a href="blog-details.php">
+                            <a href="blog/1002">
 
                             <figure>
 
@@ -358,7 +358,7 @@
 
                         <section class="blog-content">
 
-                            <a href="blog-details.php">
+                            <a href="blog/1002">
 
                             <figure>
 
@@ -388,7 +388,7 @@
 
                         <section class="blog-content">
 
-                            <a href="blog-details.php">
+                            <a href="blog/1002">
 
                             <figure>
 
