@@ -162,7 +162,7 @@
                 return;
             }
             //判断验证码是否正确
-            if(verifycode != show_num.join("")){
+            if(verifycode.toLowerCase() != show_num.join("")){
                 $.pt({
                     target: $("#login-verify-code-canvas"),
                     position: 'r',
