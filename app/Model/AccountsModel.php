@@ -12,7 +12,7 @@ class AccountsModel extends AbstractModel
 
     public function newAccount($phone, $password)
     {
-        $data['token']       = 981523;
+        $data['token']       = Strings::randString(6);
         $data['phone']       = $phone;
         $data['password']    = md5($data['token'] . "|" . $password);
         $data['register_ip'] = Strings::getClientIp();
