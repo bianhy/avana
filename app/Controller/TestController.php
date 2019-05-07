@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use Avana\System\Libraries\Cache;
+
 class TestController extends AbstractController
 {
     public function time()
@@ -11,6 +13,7 @@ class TestController extends AbstractController
 
     public function hello()
     {
+var_dump(phpinfo());exit;
         echo 'hello php';
     }
 }

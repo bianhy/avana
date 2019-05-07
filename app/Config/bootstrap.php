@@ -52,6 +52,11 @@ define('STATIC_PATH', PUBLIC_PATH.'/static/');
 //模板目录
 define('VIEW_PATH', dirname(dirname(__FILE__)) . '/Views/');
 
+define('IS_XHPROF_OPEN', function_exists('xhprof_enable') ? true : false);
+
+if (IS_DEBUG && IS_XHPROF_OPEN) {
+    xhprof_enable();
+}
 /*
 |--------------------------------------------------------------------------
 | 预定义命令行模式下的，环境变量
