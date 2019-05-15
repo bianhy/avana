@@ -21,7 +21,7 @@ register_shutdown_function(function () {
     //\Avana\System\Libraries\TcpLog::save('avana.frame');
     if (IS_DEBUG && IS_XHPROF_OPEN) {
         $data = xhprof_disable();
-        $xhprof_root = dirname(dirname(dirname(dirname(__FILE__)))).'/xhprof-0.9.4';
+        $xhprof_root = dirname(dirname(dirname(dirname(__FILE__)))).'/xhprof';
         include_once $xhprof_root . "/xhprof_lib/utils/xhprof_lib.php";
         include_once $xhprof_root . "/xhprof_lib/utils/xhprof_runs.php";
         $xhprof_runs = new XHprofRuns_Default();
