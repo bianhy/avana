@@ -10,6 +10,13 @@ class ArticleModel extends AbstractModel
 {
     const  ARTICLE_INFO = 'article:info:';
     protected static $table = 'articles';
+    protected $base_param = [
+        'id',
+        'title',
+        'span',
+        'desc',
+        'cover',
+    ];
 
 
     public function newArticle($article)
@@ -36,7 +43,7 @@ class ArticleModel extends AbstractModel
         }
 
         $callback = function ($_aid){
-            return DB::table(self::$table)->where('aid', $_aid)->first();
+            return DB::table(self::$table)->where('id', $_aid)->first();
         };
 
         $ret = $this->getMultipleByKeys($aid, self::ARTICLE_INFO, $callback, Cache::redis('default'),$with_key);
@@ -66,7 +73,7 @@ class ArticleModel extends AbstractModel
             'position' => 'home-top',
             'status'   => 1,
         ];
-        return DB::table(self::$table)->select(['id','span','title','desc','cover'])->where($where)->first();
+        return DB::table(self::$table)->select($this->base_param)->where($where)->first();
     }
 
     public function getHomeLeftArticle()
@@ -75,7 +82,7 @@ class ArticleModel extends AbstractModel
             'position' => 'home-left',
             'status'   => 1,
         ];
-        return DB::table(self::$table)->select(['id','span','title','desc','cover'])->where($where)->limit(8)->get();
+        return DB::table(self::$table)->select($this->base_param)->where($where)->limit(8)->get();
     }
 
     public function getHomeRightArticle()
@@ -84,6 +91,6 @@ class ArticleModel extends AbstractModel
             'position' => 'home-right',
             'status'   => 1,
         ];
-        return DB::table(self::$table)->select(['id','span','title','desc','cover'])->where($where)->limit(8)->get();
+        return DB::table(self::$table)->select($this->base_param)->where($where)->limit(8)->get();
     }
 }
