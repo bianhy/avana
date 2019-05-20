@@ -59,4 +59,31 @@ class ArticleModel extends AbstractModel
     {
         return DB::table(self::$table)->select('*')->where($where)->paginate($size);
     }
+
+    public function getHomeTopArticle()
+    {
+        $where = [
+            'position' => 'home-top',
+            'status'   => 1,
+        ];
+        return DB::table(self::$table)->select(['id','span','title','desc','cover'])->where($where)->first();
+    }
+
+    public function getHomeLeftArticle()
+    {
+        $where = [
+            'position' => 'home-left',
+            'status'   => 1,
+        ];
+        return DB::table(self::$table)->select(['id','span','title','desc','cover'])->where($where)->limit(8)->get();
+    }
+
+    public function getHomeRightArticle()
+    {
+        $where = [
+            'position' => 'home-right',
+            'status'   => 1,
+        ];
+        return DB::table(self::$table)->select(['id','span','title','desc','cover'])->where($where)->limit(8)->get();
+    }
 }

@@ -14,6 +14,7 @@
             <li><a href="about" title="About">About</a></li>
             <li><a href="blog" title="Blog">Blog</a></li>
             <li><a href="contact" title="Contact">Contact</a></li>
+            <li><a href="login" title="Login">Login</a></li>
         </ul>
     </nav>
 

@@ -53,11 +53,11 @@
       </article>
     </section>
     <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
-      <figure class="effect-oscar"> <img src="<?= $right1['image'];?>" alt="" class="img-responsive"/>
+      <figure class="effect-oscar"> <img src="<?= $top['cover'];?>" alt="" class="img-responsive"/>
         <figcaption>
-          <h2>Eliana Dedda<span> Identity</span></h2>
-          <p>Personal Brand Identity.</p>
-          <a href="article?id=10001">View more</a> </figcaption>
+          <h2><?= $top['title'];?><span><?= $top['span'];?></span></h2>
+          <p><?= $top['desc'];?></p>
+          <a href="article?id="<?=$top['id'];?>>View more</a> </figcaption>
       </figure>
     </section>
     <div class="clearfix"></div>
@@ -66,7 +66,7 @@
       <ul class="grid-lod effect-2" id="grid">';
           foreach ($value as $item){
               echo '<li>
-          <figure class="effect-oscar"> <img src="'.$item['image'].'" alt="" class="img-responsive"/>
+          <figure class="effect-oscar"> <img src="'.$item['cover'].'" alt="" class="img-responsive"/>
             <figcaption>
               <h2>'.$item['title'].'<span>'.$item['span'].'</span></h2>
               <p>'.$item['desc'].'</p>
