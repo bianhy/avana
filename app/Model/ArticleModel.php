@@ -59,6 +59,7 @@ class ArticleModel extends AbstractModel
 
     protected function format($article)
     {
+        $article['images'] = json_decode($article['images'],1);
         return $article;
     }
     

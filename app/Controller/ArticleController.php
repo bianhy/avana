@@ -15,7 +15,7 @@ class ArticleController extends AbstractController
             $this->outError('操作失败！');
         }
         $article = $this->ArticleModel->getArticleInfoByAid($id);
-        View::show('avana/works-details');
+        View::show('avana/works-details',['article'=>$article]);
     }
 
     public function blog($id)
