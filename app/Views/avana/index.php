@@ -57,7 +57,7 @@
         <figcaption>
           <h2><?= $top['title'];?><span><?= $top['span'];?></span></h2>
           <p><?= $top['desc'];?></p>
-          <a href="article?id="<?=$top['id'];?>>View more</a> </figcaption>
+          <a href="article?id=<?=$top['id'];?>">View more</a> </figcaption>
       </figure>
     </section>
     <div class="clearfix"></div>
