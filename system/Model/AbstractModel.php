@@ -61,6 +61,7 @@ class AbstractModel extends Model
             } else {
                 $info = $cache->getMulti($ret_keys, Null ,\Memcached::GET_PRESERVE_ORDER);
             }
+            $info = array_combine($ret_keys, $info);
         }
         $ret = [];
 
